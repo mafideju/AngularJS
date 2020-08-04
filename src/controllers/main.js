@@ -12,6 +12,7 @@ customersApp.config(function($routeProvider) {
     })
     .when('/orders/:id', {
       controller: 'ordersController',
+      controllerAs: 'oc',
       templateUrl: 'src/views/orders.html'
     })
     .otherwise({ redirectTo: '/' });

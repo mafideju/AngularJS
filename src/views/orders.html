@@ -1,10 +1,10 @@
-<h1>Orders</h1>
+<h2>Pedidos do {{ oc.customer.name }}</h2>
 <table>
   <tr>
     <th>Produtos</th>
     <th>Total</th>
   </tr>
-  <tr ng-repeat='order in orders'>
+  <tr ng-repeat='order in oc.customer.orders'>
     <td>{{ order.product }}</td>
     <td>{{ order.total | currency:'R$ ' }}</td>
   </tr>
